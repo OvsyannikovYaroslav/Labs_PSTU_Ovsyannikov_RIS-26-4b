@@ -9,23 +9,23 @@ int main()
 {
     cout.precision(10); //строчка для вывода большего кол-ва цифр
     
-    float a_f = 1000.0f;
-    float b_f = 0.0001f;
-    float s3_f = pow(a_f + b_f, 3);
-    float a3_f = pow(a_f, 3) ;
+    float a_f = 1000.0f; // a float
+    float b_f = 0.0001f; // b float
+    float s3_f = pow(a_f + b_f, 3); //(a + b)**3
+    float a3_f = pow(a_f, 3) ; //a**3
     float z_f = 3.0f * a_f * pow(b_f, 2) +
-pow(b_f, 3) + 3.0f * pow(a_f, 2) * pow(b_f, 2) ;
-    float r_f = s3_f - a3_f / z_f;
-    cout << "float: " << r_f << endl;
+pow(b_f, 3) + 3.0f * pow(a_f, 2) * pow(b_f, 2) ; // знаменатель = 3 * a * b**2 + b**3 + 3 * a**2 * b**2 
+    float r_f = s3_f - a3_f / z_f; // результат = 14 строка - 15 строка / 16 строка
+    cout << "float: " << r_f << endl; // вывод float и после него результат float
         
-    double a_d = 1000.0;
-    double b_d = 0.0001;
-    double s3_d = pow(a_d + b_d, 3);
-    double a3_d = pow(a_d, 3);
+    double a_d = 1000.0; // a double
+    double b_d = 0.0001; // b double
+    double s3_d = pow(a_d + b_d, 3); // (a + b)**3
+    double a3_d = pow(a_d, 3); // a**3
     double z_d = 3.0 * a_d * pow(b_d, 2) +
-pow (b_d, 3) + 3.0 * pow(a_d, 2) * pow(b_d, 2) ;
-    double r_d = s3_d - a3_d / z_d;
-    cout << "double: " << r_d << endl;
+pow (b_d, 3) + 3.0 * pow(a_d, 2) * pow(b_d, 2) ; // знаменатель = 3 * a * b**2 + b**3 + 3 * a**2 * b**2
+    double r_d = s3_d - a3_d / z_d; // результат = 23 строка - 24 строка / 25 строка 
+    cout << "double: " << r_d << endl; // вывод double и после него результат double
 return 0;
 }
 
