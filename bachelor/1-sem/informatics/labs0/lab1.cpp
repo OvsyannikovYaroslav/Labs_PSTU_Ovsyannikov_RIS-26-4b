@@ -1,3 +1,5 @@
+//Задание 1
+
 #include <iostream>   
 #include <cmath>
 
@@ -24,3 +26,27 @@ pow (b_d, 3) + 3.0 * pow(a_d, 2) * pow(b_d, 2) ;
     cout << "double: " << r_d << endl;
 return 0;
 }
+
+//Задание 2
+#include <iostream> 
+
+using namespace std;
+
+int main()
+{
+    int n = 5, m = 10;
+    
+    cout << "n++-m = " << n++-m << endl;
+    
+    n = 5; m = 10;
+    cout << "m-- > n =" << (m-- > n) << endl;
+
+    n = 5; m = 10;
+    cout << "n-- > m= " << (n-- > m) << endl;
+    
+    return 0;
+}
+
+
+
+
