@@ -7,6 +7,8 @@ using namespace std;
 
 int main()
 {
+    cout.precision(10); //строчка для вывода большего кол-ва цифр
+    
     float a_f = 1000.0f;
     float b_f = 0.0001f;
     float s3_f = pow(a_f + b_f, 3);
