@@ -40,3 +40,48 @@ int main() {
 
     return 0;
 }
+
+
+// пример задачи с подставленными значениями
+
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double a = 1;
+    double b = -5;
+    double c = 6;
+
+    if (a == 0) {
+        if (b == 0) {
+            if (c == 0) {
+                cout << "Infinite number of solutions" << endl;
+            } else {
+                cout << "No solutions" << endl;
+            }
+        } else {
+            double x = -c / b;
+            cout << "Linear root: x = " << x << endl;
+        }
+    } else {
+        double D = b * b - 4 * a * c;
+        cout << "D = " << D << endl;
+
+        if (D < 0) {
+            cout << "No real roots" << endl;
+        } else if (D == 0) {
+            double x = -b / (2 * a);
+            cout << "x = " << x << endl;
+        } else {
+            double x1 = (-b - sqrt(D)) / (2 * a);
+            double x2 = (-b + sqrt(D)) / (2 * a);
+            cout << "x1 = " << x1 << endl;
+            cout << "x2 = " << x2 << endl;
+        }
+    }
+
+    return 0;
+}
+
