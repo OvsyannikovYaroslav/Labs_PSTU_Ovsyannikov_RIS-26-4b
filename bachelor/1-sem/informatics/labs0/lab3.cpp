@@ -1,4 +1,4 @@
-//Задание 1
+ч//Задание 1
 
 #include <iostream>
 #include <iomanip>
@@ -44,4 +44,6 @@ int main() {
 
     return 0;
 }
+
+
 
